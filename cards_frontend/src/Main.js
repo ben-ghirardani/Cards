@@ -20,6 +20,13 @@ class Main extends React.Component {
         }
     }
 
+    shuffleDeck(array) {
+        for (let i = array.length -1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
     render(){
         return(
             <HashRouter>
@@ -32,7 +39,7 @@ class Main extends React.Component {
                     </ul>
                     <div className="content">
                         <Route exact path="/" component={Home}/>
-                        <Route path="/snap" component={Snap} />
+                        <Route path="/snap" component={Snap} deckOfCards={this.state.deckOfCards} />
                         <Route path="/other" component={Other}/>
                     </div>
                     {/* pass shuffle method and deck of cards down as props */}

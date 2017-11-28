@@ -8,6 +8,8 @@ class Home extends React.Component {
                 <p>
                     Text describing the games available.
                 </p>
+                <br/>
+                <button>Test Button</button>
             </div>
 
         );
