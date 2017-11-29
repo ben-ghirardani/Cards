@@ -4,12 +4,9 @@ class Snap extends React.Component {
     
     constructor(props) {
         super(props);
-        this.state = {
-            deckOfCards: ["test"]
-        }
     }
 
-    // add a component did load method to pull deckOfCards from props, insert it into state here and shuffle it
+    // use props here in a variable? 
 
     render() {
         return(

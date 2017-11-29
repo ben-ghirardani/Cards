@@ -39,7 +39,10 @@ class Main extends React.Component {
                     </ul>
                     <div className="content">
                         <Route exact path="/" component={Home}/>
+
+                        {/* the route below is passing deckOfCards as props to Snap component according to Chrome dev tools */}
                         <Route path="/snap" component={Snap} deckOfCards={this.state.deckOfCards} />
+
                         <Route path="/other" component={Other}/>
                     </div>
                 </div>
