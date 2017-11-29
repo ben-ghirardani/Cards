@@ -42,9 +42,6 @@ class Main extends React.Component {
                         <Route path="/snap" component={Snap} deckOfCards={this.state.deckOfCards} />
                         <Route path="/other" component={Other}/>
                     </div>
-                    {/* pass shuffle method and deck of cards down as props */}
-                    {/* or does it go above in the Route component? */}
-                    {/* <Snap className="Snap" deckOfCards={this.state.deckOfCards} /> */}
                 </div>
             </HashRouter>
         )
