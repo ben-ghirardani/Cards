@@ -4,11 +4,15 @@ class Snap extends React.Component {
     
     constructor(props) {
         super(props);
+        this.state = {};
     }
 
-    // use props here in a variable? 
+    componentDidMount() {
+        console.log("should be deck from props: ", this.props.deckOfCards);
+    }
 
-    render() {
+    render() {     
+        // console.log(this.props.deckOfCards);          
         return(
             <div>
                 This is Snap
