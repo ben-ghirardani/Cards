@@ -4,15 +4,18 @@ class Snap extends React.Component {
     
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            playerDeck: [],
+            opponentDeck: [] 
+        };
     }
 
-    componentDidMount() {
-        console.log("should be deck from props: ", this.props.deckOfCards);
-    }
+    // componentDidMount() {
+    //     console.log("should be deck from props: ", this.props.deckOfCards);
+    // }
 
     render() {     
-        // console.log(this.props.deckOfCards);          
+        console.log(this.props.deckOfCards);     
         return(
             <div>
                 This is Snap
